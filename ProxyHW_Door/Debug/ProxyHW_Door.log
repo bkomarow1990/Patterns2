@@ -1,0 +1,33 @@
+﻿  Source.cpp
+F:\Visual Studio 2019\VC\Tools\MSVC\14.27.29110\include\xstddef(127,1): error C2678: binary '<': no operator found which takes a left-hand operand of type 'const _Ty' (or there is no acceptable conversion)
+          with
+          [
+              _Ty=Login
+          ]
+C:\Users\Igor\source\repos\Patterns2OOP\ProxyHW_Door\Classes.h(43,7): message : could be 'bool Login::operator <(const Login &)'
+F:\Visual Studio 2019\VC\Tools\MSVC\14.27.29110\include\xstddef(127,1): message : while trying to match the argument list '(const _Ty, const _Ty)'
+          with
+          [
+              _Ty=Login
+          ]
+F:\Visual Studio 2019\VC\Tools\MSVC\14.27.29110\include\xstddef(126): message : while compiling class template member function 'bool std::less<Login>::operator ()(const _Ty &,const _Ty &) const'
+          with
+          [
+              _Ty=Login
+          ]
+F:\Visual Studio 2019\VC\Tools\MSVC\14.27.29110\include\xutility(1546): message : see reference to function template instantiation 'bool std::less<Login>::operator ()(const _Ty &,const _Ty &) const' being compiled
+          with
+          [
+              _Ty=Login
+          ]
+F:\Visual Studio 2019\VC\Tools\MSVC\14.27.29110\include\xmemory(1326): message : see reference to class template instantiation 'std::less<Login>' being compiled
+F:\Visual Studio 2019\VC\Tools\MSVC\14.27.29110\include\xmemory(1326): message : see reference to variable template 'const bool is_empty_v<std::less<Login> >' being compiled
+F:\Visual Studio 2019\VC\Tools\MSVC\14.27.29110\include\map(75): message : see reference to class template instantiation 'std::_Tree<std::_Tmap_traits<_Kty,_Ty,_Pr,_Alloc,false>>' being compiled
+          with
+          [
+              _Kty=Login,
+              _Ty=Password,
+              _Pr=std::less<Login>,
+              _Alloc=std::allocator<std::pair<const Login,Password>>
+          ]
+C:\Users\Igor\source\repos\Patterns2OOP\ProxyHW_Door\Classes.h(72): message : see reference to class template instantiation 'std::map<Login,Password,std::less<Login>,std::allocator<std::pair<const Login,Password>>>' being compiled
